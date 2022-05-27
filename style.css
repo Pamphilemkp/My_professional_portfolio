@@ -2,11 +2,13 @@
 
 @media only screen and (max-width: 700px) {
   body {
-    font-family: Poppins, serif;
+    font-family: 'Poppins';
     box-sizing: border-box;
-    height: 718px;
+    height: 100vh;
     color: #172b4d;
-    margin-top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
   }
 
   header {
@@ -15,6 +17,7 @@
     align-items: center;
     z-index: 2;
     padding: 0 20px;
+    height: 48px;
   }
 
   header a {
@@ -29,41 +32,59 @@
     color: #6070ff;
   }
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+  main {
     background-image: url("images/headerShapesmobile.png");
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 20px;
+    height: 604px;
   }
 
-  .container h2 {
-    font-style: bold;
+  section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px;
+   gap: 12px;
+  }
+
+  section h1 {
+    font-style: normal;
+    font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-    text-align: left;
-    vertical-align: center;
+    color: #172b4d;
+    width: 327px;
+    margin-bottom: -16px;
   }
 
-  .container p {
-    font-size: 3.5vh;
+  section p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
     line-height: 24px;
-    text-align: left;
-    vertical-align: top;
   }
 
-  .container .social-media {
-    margin-top: 10px;
+  section .social-media {
+    margin-top: -16px; 
   }
 
-  .container .social-media .media-icons {
+  section .social-media ul {
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 170.17px;
+    height: 20px;
+    list-style: none;
   }
 
-  .container .social-media .social-text {
+  section .social-media .social-text {
     color: #7f8cff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  section .social-media li {
+margin-left: -40px;
   }
 }
