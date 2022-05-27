@@ -14,7 +14,14 @@
 
 [Live Demo Link](https://livedemo.com)
 
+## Getting Started
 
+1. Enter this url : https://github.com/Pamphilemkp/My_professional_portfolio in your web browser
+2. Once opened navigate to the top left of the project the green code button will be visible on the right hand side
+3. Once cliqued on the green button select download Zip option from the drop down menuu.
+4. You will be able to access my project locally once the download is complete. 
+here is my repository link:
+https://github.com/Pamphilemkp/My_professional_portfolio
 
 
 To get a local copy up and running follow these simple example steps.
@@ -45,7 +52,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Pamphilemkp/My_professional_portfolio/issues).
 
 ## Show your support
 
