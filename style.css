@@ -6,11 +6,17 @@
   body {
     font-family: 'Poppins', serif;
     box-sizing: border-box;
-    height: 718px;
+    height: 100vh;
     color: #172b4d;
     margin: 0;
     padding: 0;
-    width: 375px;
+    width: 100vw;
+    background: #E5E5E5;
+  }
+
+  .mobile-squeleton {
+    background: #FFFFFF;
+    border-bottom-left-radius: 80px;
   }
 
   .header {
@@ -100,10 +106,16 @@
   /*  ---------------------mobile section -------------------------- */
 
   .section-nav {
-    padding: 20px;
     display: grid;
     row-gap: 12px;
-    height: 552px;
+    height: 602px;
+    border: 1px solid #DFE1E6;
+    border-radius: 16px;
+    padding: 16px;
+    gap: 12px;
+    width: 295px;
+    margin-left: 22px;
+    background: #FFFFFF;
   }
 
   .section-nav .header-mobile {
@@ -230,7 +242,155 @@
     color: #c1c7d0;
     background-color: #fff;
   }
+
+/* about myself */
+
+.about-myself {
+  height: 1273px;
+  margin-top: 150px;
+  background: #FFFFFF;
+  border-top-right-radius: 100px;
 }
+
+.about-myself .about-container {
+  width: 327;
+  margin-left: 22px;
+  padding: 16px;
+}
+
+.about-myself .about-container h2 {
+  font-family: 'Poppins',serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  padding-top: 100px;
+}
+
+.about-myself .about-container p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.about-myself .about-container .social-media .social-text {
+  color: #7f8cff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.about-myself .about-container .social-media ul {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;;
+  height: 40px;
+  padding: 0;
+}
+
+.about-myself .about-container .social-media ul li {
+  display: inline;
+  list-style: none;
+  height: 20px;
+}
+
+/* .about-myself .about-container .get-myResume {
+  background: #FFFFFF;
+  width:;
+} */
+
+.about-myself .about-container .get-myResume p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #396DF2;
+  border: 1px solid #396df2;
+  border-radius: 16px;
+  width: 138px;
+  height: 24px;
+  padding: 16px;
+}
+
+.about-myself .about-container .language {
+  display: flex;
+  align-items: center;
+  color: #000000;
+  gap: 24px;
+  padding: 0;
+}
+
+.about-myself .about-container .language p {
+  width: 237px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.about-myself .about-container .language li {
+  display: inline;
+  list-style: none;
+}
+
+.about-myself .about-container .language-list{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  text-decoration: none;
+  gap: 12px;
+}
+
+.about-myself .about-container .language-list li {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background: #F7F7F9;
+  border-radius: 8px;
+  width: 303px;
+  height: 66.72px;
+  padding-left: 12px;
+}
+
+.about-myself .about-container .language-list li img {
+  width: 48px;
+  height: 48px;
+}
+
+.about-myself .about-container .Frameworks, .skills {
+  width: 327px;
+  height: 72px;
+  border-bottom: 1px solid #DFE1E6;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* responsiveness */
 
