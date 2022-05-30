@@ -17,6 +17,7 @@
   .mobile-squeleton {
     background: #fff;
     border-bottom-left-radius: 80px;
+    height: 718px;
   }
 
   .header {
@@ -108,14 +109,17 @@
   .section-nav {
     display: grid;
     row-gap: 12px;
-    height: 602px;
+    height: 650px;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     padding: 16px;
-    gap: 12px;
     width: 295px;
     margin-left: 22px;
     background: #fff;
+  }
+
+  .card {
+    margin-top: 100px;
   }
 
   .section-nav .header-mobile {
@@ -150,12 +154,21 @@
     display: flex;
     flex-direction: column;
     height: 92px;
+    margin-top: -75px;
   }
 
   .section-mobile .project-title .top-list {
     list-style: none;
     display: flex;
     justify-content: space-between;
+  }
+
+  .space-list {
+    margin-bottom: 32px;
+  }
+
+  .identaton {
+    margin-top: -50px;
   }
 
   .section-mobile .list-bottom li {
@@ -219,6 +232,7 @@
     display: flex;
     gap: 8px;
     list-style: none;
+    margin-top: -60px;
   }
 
   .section-mobile .action {
@@ -308,11 +322,6 @@
     height: 40px;
     padding: 0;
   }
-
-  /* .about-myself .about-container .get-myResume {
-  background: #FFFFFF;
-  width:;
-} */
 
   .about-myself .about-container .get-myResume p {
     font-style: normal;
@@ -673,11 +682,6 @@
     height: 40px;
     padding: 0;
   }
-
-  /* .about-myself .about-container .get-myResume {
-  background: #FFFFFF;
-  width:;
-} */
 
   .about-myself .about-container .get-myResume p {
     font-style: normal;
