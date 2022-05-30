@@ -11,11 +11,11 @@
     margin: 0;
     padding: 0;
     width: 100vw;
-    background: #E5E5E5;
+    background: #e5e5e5;
   }
 
   .mobile-squeleton {
-    background: #FFFFFF;
+    background: #fff;
     border-bottom-left-radius: 80px;
   }
 
@@ -109,13 +109,13 @@
     display: grid;
     row-gap: 12px;
     height: 602px;
-    border: 1px solid #DFE1E6;
+    border: 1px solid #dfe1e6;
     border-radius: 16px;
     padding: 16px;
     gap: 12px;
     width: 295px;
     margin-left: 22px;
-    background: #FFFFFF;
+    background: #fff;
   }
 
   .section-nav .header-mobile {
@@ -179,6 +179,28 @@
     color: #7a869a;
   }
 
+  .about-myself .about-container .language li {
+    display: inline;
+    list-style: none;
+  }
+
+  .about-myself .about-container .language-list .list {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    background: #f7f7f9;
+    border-radius: 8px;
+    width: 303px;
+    height: 66.72px;
+    padding-left: 12px;
+  }
+
+  .about-myself .about-container .social-media ul li {
+    display: inline;
+    list-style: none;
+    height: 20px;
+  }
+
   .section-mobile .project-title .top-list li:first-child {
     color: #344563;
   }
@@ -204,7 +226,7 @@
     align-items: center;
   }
 
-  .section-mobile button {
+  .section-mobile .button {
     border: 1px solid #6070ff;
     border-radius: 8px;
     outline: none;
@@ -220,177 +242,128 @@
     line-height: 24px;
     color: #396df2;
     background: #fff;
+    cursor: pointer;
   }
 
-  .section-mobile button:hover {
-    background-color: red;
+  .section-mobile .button:hover {
+    background: #6070ff !important;
     color: #fff;
     box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   }
 
-  .section-mobile button:active {
+  .section-mobile .button:active {
     color: #fff;
-    background-color: #2230d2;
+    background: #2230d2;
   }
 
-  .section-mobile button:enabled {
+  .section-mobile .button:hover:disabled {
+    color: #5e6c84;
+    background: #fff;
+  }
+
+  /* about myself */
+
+  .about-myself {
+    height: 1273px;
+    margin-top: 150px;
+    background: #fff;
+    border-top-right-radius: 100px;
+  }
+
+  .about-myself .about-container {
+    width: 327;
+    margin-left: 22px;
+    padding: 16px;
+  }
+
+  .about-myself .about-container h2 {
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    padding-top: 100px;
+  }
+
+  .about-myself .about-container p {
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .about-myself .about-container .social-media .social-text {
     color: #7f8cff;
-    background-color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
   }
 
-  .section-mobile button:hover:disabled {
-    color: #c1c7d0;
-    background-color: #fff;
+  .about-myself .about-container .social-media ul {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    height: 40px;
+    padding: 0;
   }
 
-/* about myself */
-
-.about-myself {
-  height: 1273px;
-  margin-top: 150px;
-  background: #FFFFFF;
-  border-top-right-radius: 100px;
-}
-
-.about-myself .about-container {
-  width: 327;
-  margin-left: 22px;
-  padding: 16px;
-}
-
-.about-myself .about-container h2 {
-  font-family: 'Poppins',serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  padding-top: 100px;
-}
-
-.about-myself .about-container p {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.about-myself .about-container .social-media .social-text {
-  color: #7f8cff;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.about-myself .about-container .social-media ul {
-  display: flex;
-  justify-content: space-between;
-  width: 200px;;
-  height: 40px;
-  padding: 0;
-}
-
-.about-myself .about-container .social-media ul li {
-  display: inline;
-  list-style: none;
-  height: 20px;
-}
-
-/* .about-myself .about-container .get-myResume {
+  /* .about-myself .about-container .get-myResume {
   background: #FFFFFF;
   width:;
 } */
 
-.about-myself .about-container .get-myResume p {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #396DF2;
-  border: 1px solid #396df2;
-  border-radius: 16px;
-  width: 138px;
-  height: 24px;
-  padding: 16px;
+  .about-myself .about-container .get-myResume p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #396df2;
+    border: 1px solid #396df2;
+    border-radius: 16px;
+    width: 138px;
+    height: 24px;
+    padding: 16px;
+  }
+
+  .about-myself .about-container .language {
+    display: flex;
+    align-items: center;
+    color: #000;
+    gap: 24px;
+    padding: 0;
+  }
+
+  .about-myself .about-container .language p {
+    width: 237px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .about-myself .about-container .language-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    text-decoration: none;
+    gap: 12px;
+  }
+
+  .about-myself .about-container .language-list .list img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .about-myself .about-container .Frameworks,
+  .skills {
+    width: 327px;
+    height: 72px;
+    border-bottom: 1px solid #dfe1e6;
+  }
 }
-
-.about-myself .about-container .language {
-  display: flex;
-  align-items: center;
-  color: #000000;
-  gap: 24px;
-  padding: 0;
-}
-
-.about-myself .about-container .language p {
-  width: 237px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-}
-
-.about-myself .about-container .language li {
-  display: inline;
-  list-style: none;
-}
-
-.about-myself .about-container .language-list{
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  text-decoration: none;
-  gap: 12px;
-}
-
-.about-myself .about-container .language-list li {
-  list-style: none;
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  background: #F7F7F9;
-  border-radius: 8px;
-  width: 303px;
-  height: 66.72px;
-  padding-left: 12px;
-}
-
-.about-myself .about-container .language-list li img {
-  width: 48px;
-  height: 48px;
-}
-
-.about-myself .about-container .Frameworks, .skills {
-  width: 327px;
-  height: 72px;
-  border-bottom: 1px solid #DFE1E6;
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* responsiveness */
 
@@ -403,9 +376,15 @@
     margin: 0;
     padding: 0;
     width: 100vw;
+    background: #e5e5e5;
   }
 
-  header {
+  .mobile-squeleton {
+    background: #fff;
+    border-bottom-left-radius: 80px;
+  }
+
+  .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -414,7 +393,7 @@
     height: 48px;
   }
 
-  header a {
+  .header a {
     text-decoration: none;
     font-weight: 700;
     font-family: 'Poppins', serif;
@@ -432,6 +411,7 @@
     background-size: cover;
     padding: 20px;
     height: 604px;
+    margin-bottom: 150px;
   }
 
   .section {
@@ -491,10 +471,16 @@
   /*  ---------------------mobile section -------------------------- */
 
   .section-nav {
-    padding: 20px;
     display: grid;
     row-gap: 12px;
-    height: 552px;
+    height: 602px;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    padding: 16px;
+    gap: 12px;
+    width: 295px;
+    margin-left: 22px;
+    background: #fff;
   }
 
   .section-nav .header-mobile {
@@ -558,6 +544,28 @@
     color: #7a869a;
   }
 
+  .about-myself .about-container .language li {
+    display: inline;
+    list-style: none;
+  }
+
+  .about-myself .about-container .language-list .list {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    background: #f7f7f9;
+    border-radius: 8px;
+    width: 303px;
+    height: 66.72px;
+    padding-left: 12px;
+  }
+
+  .about-myself .about-container .social-media ul li {
+    display: inline;
+    list-style: none;
+    height: 20px;
+  }
+
   .section-mobile .project-title .top-list li:first-child {
     color: #344563;
   }
@@ -565,8 +573,8 @@
   .section-mobile p {
     font-family: 'Poppins', serif;
     font-size: 15px;
-    line-height: 24px;
     font-weight: 400;
+    line-height: 24px;
     vertical-align: top;
     color: #344563;
     margin: 0;
@@ -583,7 +591,7 @@
     align-items: center;
   }
 
-  .section-mobile button {
+  .section-mobile .button {
     border: 1px solid #6070ff;
     border-radius: 8px;
     outline: none;
@@ -599,26 +607,125 @@
     line-height: 24px;
     color: #396df2;
     background: #fff;
+    cursor: pointer;
   }
 
-  .section-mobile button:hover {
-    background-color: red;
+  .section-mobile .button:hover {
+    background: #6070ff !important;
     color: #fff;
     box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   }
 
-  .section-mobile button:active {
+  .section-mobile .button:active {
     color: #fff;
-    background-color: #2230d2;
+    background: #2230d2;
   }
 
-  .section-mobile button:enabled {
+  .section-mobile .button:hover:disabled {
+    color: #5e6c84;
+    background: #fff;
+  }
+
+  /* about myself */
+
+  .about-myself {
+    height: 1273px;
+    margin-top: 150px;
+    background: #fff;
+    border-top-right-radius: 100px;
+  }
+
+  .about-myself .about-container {
+    width: 320;
+    margin-left: 22px;
+    padding: 16px;
+  }
+
+  .about-myself .about-container h2 {
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    padding-top: 100px;
+  }
+
+  .about-myself .about-container p {
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .about-myself .about-container .social-media .social-text {
     color: #7f8cff;
-    background-color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
   }
 
-  .section-mobile button:hover:disabled {
-    color: #c1c7d0;
-    background-color: #fff;
+  .about-myself .about-container .social-media ul {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    height: 40px;
+    padding: 0;
+  }
+
+  /* .about-myself .about-container .get-myResume {
+  background: #FFFFFF;
+  width:;
+} */
+
+  .about-myself .about-container .get-myResume p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #396df2;
+    border: 1px solid #396df2;
+    border-radius: 16px;
+    width: 138px;
+    height: 24px;
+    padding: 16px;
+  }
+
+  .about-myself .about-container .language {
+    display: flex;
+    align-items: center;
+    color: #000;
+    gap: 24px;
+    padding: 0;
+  }
+
+  .about-myself .about-container .language p {
+    width: 237px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .about-myself .about-container .language-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    text-decoration: none;
+    gap: 12px;
+  }
+
+  .about-myself .about-container .language-list .list img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .about-myself .about-container .Frameworks,
+  .skills {
+    width: 327px;
+    height: 72px;
+    border-bottom: 1px solid #dfe1e6;
   }
 }
