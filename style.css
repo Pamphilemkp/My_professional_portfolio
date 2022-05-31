@@ -4,18 +4,21 @@
 
 @media only screen and (max-width: 700px) {
   body {
-    font-family: 'Poppins', serif;
+    margin: 0;
     box-sizing: border-box;
     height: 100vh;
-    color: #172b4d;
-    margin: 0;
-    padding: 0;
     width: 100vw;
-    background: #e5e5e5;
+    padding: 0;
+  }
+
+  .container {
+    color: #172b4d;
+    background-color: #e5e5e5;
+    font-family: 'Poppins', serif;
   }
 
   .mobile-squeleton {
-    background: #fff;
+    background-color: #fff;
     border-bottom-left-radius: 80px;
     height: 718px;
   }
@@ -24,7 +27,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 2;
     padding: 0 20px;
     height: 48px;
   }
@@ -57,7 +59,7 @@
     gap: 12px;
   }
 
-  .section h1 {
+  .section h2 {
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -259,20 +261,15 @@
     cursor: pointer;
   }
 
-  .section-mobile .button:hover {
-    background: #6070ff !important;
+  .button:hover {
+    background-color: #6070ff !important;
     color: #fff;
     box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   }
 
-  .section-mobile .button:active {
+  .button:active {
     color: #fff;
-    background: #2230d2;
-  }
-
-  .section-mobile .button:hover:disabled {
-    color: #5e6c84;
-    background: #fff;
+    background-color: #2230d2;
   }
 
   /* about myself */
@@ -323,7 +320,7 @@
     padding: 0;
   }
 
-  .about-myself .about-container .get-myResume p {
+  .about-myself .about-container .get-myResume a {
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -335,6 +332,7 @@
     width: 138px;
     height: 24px;
     padding: 16px;
+    text-decoration: none;
   }
 
   .about-myself .about-container .language {
