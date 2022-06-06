@@ -133,7 +133,7 @@
     grid-template-columns: auto min-max0(0, 1fr);
     grid-template-rows: auto 1fr;
     width: 295px;
-    row-gap: 12px;
+    row-gap: 11px;
     margin: 0;
     padding: 0;
   }
