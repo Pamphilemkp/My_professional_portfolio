@@ -182,7 +182,9 @@
     color: #6070ff;
     background: #ebebff;
     border-radius: 8px;
-    padding: 12px 12px 24px 12px;
+    padding: 12px 12px 12px 12px;
+    float: left;
+    margin-right: 10px;
   }
 
   .section-mobile .project-title .top-list li {
@@ -231,7 +233,7 @@
   }
 
   .section-mobile .list-bottom {
-    display: flex;
+    /* display: flex; */
     gap: 8px;
     list-style: none;
     margin-top: -60px;
