@@ -296,6 +296,19 @@
     padding-top: 100px;
   }
 
+  footer .footer-container p {
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #ebebff;
+    text-align: center;
+    width: 327px;
+    margin-left: 24px;
+    margin-bottom: 87px;
+  }
+
   .about-myself .about-container p {
     font-family: 'Poppins', serif;
     font-style: normal;
@@ -369,6 +382,56 @@
     width: 327px;
     height: 72px;
     border-bottom: 1px solid #dfe1e6;
+  }
+
+  /* footer menu */
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #6070ff;
+    background-image: url("images/contact\ form\ shapes-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 265px auto;
+    background-position: right;
+    height: 900px;
+    border-top-left-radius: 100px;
+    margin-top: -70px;
+  }
+
+  footer .footer-container {
+    margin-top: 103px;
+  }
+
+  footer .footer-container h3 {
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: #fff;
+  }
+
+  footer .footer-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-left: 24px;
+  }
+
+  footer .footer-container form input {
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    height: 18px;
+    width: 273px;
+    color: #172b4d;
+    padding: 15px 38px  15px 16px;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
   }
 }
 
