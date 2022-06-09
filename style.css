@@ -1010,7 +1010,7 @@
   .mobile-squeleton {
     background-color: #fff;
     border-bottom-left-radius: 80px;
-    background-image: url(../images/desktop-header.svg);
+    background-image: url("images/desktop-header.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 90% top;
