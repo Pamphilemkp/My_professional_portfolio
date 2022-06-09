@@ -539,7 +539,7 @@
   }
 
   .main {
-    background-image: url("images/headerShapesmobile.svg");
+    background-image: url("../My_professional_portfolio/images/desktop-header.svg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px;
@@ -988,6 +988,7 @@
 
 @media only screen and (min-width: 1201px) {
   body {
+    overflow-x: hidden;
     margin: 0;
     box-sizing: border-box;
     height: 100vh;
@@ -1036,7 +1037,12 @@
     color: #6070ff;
   }
 
-  .mobile-squeleton .header nav {
+  .mobile-img {
+    display: none;
+  }
+
+  .mobile-squeleton .header nav .mobile-img,
+  .desktop-img {
     display: none;
   }
 
@@ -1167,10 +1173,6 @@
     margin-top: 24px;
   }
 
-  .mobile-img {
-    display: none;
-  }
-
   .move {
     position: relative;
   }
@@ -1228,7 +1230,7 @@
     width: 320px;
     height: 40px;
   }
-  
+
   .section-mobile .project-title .top-list li {
     font-style: normal;
     font-weight: 500;
@@ -1417,7 +1419,6 @@
   .about-myself .about-container ul {
     padding: 0;
   }
-
 
   .about-myself .about-container .language-list .list {
     display: flex;
