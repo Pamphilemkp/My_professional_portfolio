@@ -1041,10 +1041,10 @@
     display: none;
   }
 
-  .mobile-squeleton .header nav .mobile-img,
+  /* .mobile-squeleton .header nav .mobile-img,
   .desktop-img {
     display: none;
-  }
+  } */
 
   .mobile-squeleton .header ul {
     padding: 0;
