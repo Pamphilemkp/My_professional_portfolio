@@ -1228,11 +1228,7 @@
     width: 320px;
     height: 40px;
   }
-
-  .about-myself .about-container ul li {
-    list-style: none;
-  }
-
+  
   .section-mobile .project-title .top-list li {
     font-style: normal;
     font-weight: 500;
@@ -1411,17 +1407,17 @@
   .about-myself .about-container .language-list {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     padding: 0;
     text-decoration: none;
     gap: 12px;
-    margin-left: -25%;
   }
 
   .about-myself .about-container ul {
     padding: 0;
   }
+
 
   .about-myself .about-container .language-list .list {
     display: flex;
