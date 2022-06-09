@@ -1010,11 +1010,10 @@
   .mobile-squeleton {
     background-color: #fff;
     border-bottom-left-radius: 80px;
-    background-image: url(../My_professional_portfolio/images/pc-bg.svg);
+    background-image: url(../images/desktop-header.svg);
     background-repeat: no-repeat;
-
-    /* background-size: 1350px 100%; */
-    background-position: center;
+    background-size: 100%;
+    background-position: 90% top;
   }
 
   .header {
@@ -1040,11 +1039,6 @@
   .mobile-img {
     display: none;
   }
-
-  /* .mobile-squeleton .header nav .mobile-img,
-  .desktop-img {
-    display: none;
-  } */
 
   .mobile-squeleton .header ul {
     padding: 0;
@@ -1089,9 +1083,6 @@
 
   .main {
     height: 721px;
-    background-image: url(../images/desktop-header.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .section {
