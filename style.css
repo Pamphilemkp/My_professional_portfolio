@@ -1089,6 +1089,9 @@
 
   .main {
     height: 721px;
+    background-image: url("../My_professional_portfolio/images/desktop-header.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .section {
