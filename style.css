@@ -1011,7 +1011,9 @@
     border-bottom-left-radius: 80px;
     background-image: url(../My_professional_portfolio/images/pc-bg.svg);
     background-repeat: no-repeat;
-    background-size: 1350px 100%;
+
+    /* background-size: 1350px 100%; */
+    background-position: center;
   }
 
   .header {
@@ -1162,6 +1164,7 @@
   .section-nav .header-mobile img {
     height: 448px;
     width: 544px;
+    margin-top: 24px;
   }
 
   .mobile-img {
@@ -1224,6 +1227,10 @@
     gap: 12px;
     width: 320px;
     height: 40px;
+  }
+
+  .about-myself .about-container ul li {
+    list-style: none;
   }
 
   .section-mobile .project-title .top-list li {
@@ -1331,7 +1338,7 @@
   }
 
   .about-container p {
-    width: 447px;
+    width: 496px;
     height: 102px;
     font-family: 'Poppins', serif;
     font-style: normal;
@@ -1409,7 +1416,11 @@
     padding: 0;
     text-decoration: none;
     gap: 12px;
-    margin-left: -190px;
+    margin-left: -25%;
+  }
+
+  .about-myself .about-container ul {
+    padding: 0;
   }
 
   .about-myself .about-container .language-list .list {
@@ -1553,6 +1564,7 @@
     padding: 12px 16px;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
+    align-self: center;
   }
 
   footer .footer-container hr {
