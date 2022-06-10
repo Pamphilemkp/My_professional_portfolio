@@ -1292,12 +1292,14 @@
     color: #396df2;
     background: #fff;
     cursor: pointer;
+    transition: all 1s ease;
   }
 
   .button:hover {
     background-color: #6070ff !important;
     color: #fff;
     box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+    font-size: 16px;
   }
 
   .button:active {
@@ -1386,6 +1388,21 @@
     height: 24px;
     padding: 16px;
     text-decoration: none;
+    transition: all .3s ease;
+  }
+
+  .about-myself .about-container .get-myResume  {
+    transition: all .3s ease;
+    width: 180px;
+
+  }
+
+  .about-myself .about-container .get-myResume:hover  {
+    transform: skewX(5deg);
+  }
+
+  .about-myself .about-container .get-myResume a:hover {
+    color: white;
   }
 
   .about-myself .about-container .language {
