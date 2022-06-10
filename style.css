@@ -1034,19 +1034,12 @@
     width: 76px;
     height: 20px;
     color: #6070ff;
+    transition: all 1s ease-out;
   }
 
-  .mobile-img {
-    display: none;
-  }
-
-  .mobile-squeleton .header ul {
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    margin: 0;
+  .header a:hover {
+    color: black;
+    font-size: 25px;
   }
 
   .section .social-media li {
@@ -1078,6 +1071,24 @@
     line-height: 20px;
     width: 63px;
     height: 20px;
+    margin: 0;
+  }
+
+  .header .header-menu li:hover {
+    color: #6070ff;
+    font-size: 17px;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  .mobile-squeleton .header ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
     margin: 0;
   }
 
@@ -1292,12 +1303,14 @@
     color: #396df2;
     background: #fff;
     cursor: pointer;
+    transition: all 1s ease;
   }
 
   .button:hover {
     background-color: #6070ff !important;
     color: #fff;
     box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+    font-size: 16px;
   }
 
   .button:active {
@@ -1371,6 +1384,8 @@
   .about-myself .about-container .get-myResume {
     margin-top: 24px;
     grid-area: come4;
+    transition: all 0.3s ease;
+    width: 180px;
   }
 
   .about-myself .about-container .get-myResume a {
@@ -1386,6 +1401,15 @@
     height: 24px;
     padding: 16px;
     text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .about-myself .about-container .get-myResume:hover {
+    transform: skewX(5deg);
+  }
+
+  .about-myself .about-container .get-myResume a:hover {
+    color: white;
   }
 
   .about-myself .about-container .language {
@@ -1556,6 +1580,13 @@
     border: 1px solid #cfd8dc;
     border-radius: 8px;
     align-self: center;
+    animation: grow 0.5s ease-in-out 1s infinite alternate;
+    -moz-animation: grow 0.5s ease-in-out 1s infinite alternate;
+    -webkit-animation: grow 0.5s ease-in-out 1s infinite alternate;
+  }
+
+  @keyframes grow {
+    100% { height: 50px; }
   }
 
   footer .footer-container hr {
