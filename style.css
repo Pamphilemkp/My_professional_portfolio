@@ -1034,6 +1034,18 @@
     width: 76px;
     height: 20px;
     color: #6070ff;
+    transition: all 1s ease-out ;
+  }
+
+  .header a:hover {
+    color: black;
+    font-size: 25px;
+
+  }
+
+  .header .header-menu li:hover {
+    color: #6070ff;
+    font-size: 17px;
   }
 
   .mobile-img {
@@ -1369,7 +1381,7 @@
     height: 40px;
     justify-content: space-between;
   }
-
+  
   .about-myself .about-container .get-myResume {
     margin-top: 24px;
     grid-area: come4;
