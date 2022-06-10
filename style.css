@@ -1034,31 +1034,12 @@
     width: 76px;
     height: 20px;
     color: #6070ff;
-    transition: all 1s ease-out ;
+    transition: all 1s ease-out;
   }
 
   .header a:hover {
     color: black;
     font-size: 25px;
-
-  }
-
-  .header .header-menu li:hover {
-    color: #6070ff;
-    font-size: 17px;
-  }
-
-  .mobile-img {
-    display: none;
-  }
-
-  .mobile-squeleton .header ul {
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    margin: 0;
   }
 
   .section .social-media li {
@@ -1090,6 +1071,24 @@
     line-height: 20px;
     width: 63px;
     height: 20px;
+    margin: 0;
+  }
+
+  .header .header-menu li:hover {
+    color: #6070ff;
+    font-size: 17px;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  .mobile-squeleton .header ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
     margin: 0;
   }
 
@@ -1381,10 +1380,12 @@
     height: 40px;
     justify-content: space-between;
   }
-  
+
   .about-myself .about-container .get-myResume {
     margin-top: 24px;
     grid-area: come4;
+    transition: all 0.3s ease;
+    width: 180px;
   }
 
   .about-myself .about-container .get-myResume a {
@@ -1400,16 +1401,10 @@
     height: 24px;
     padding: 16px;
     text-decoration: none;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
   }
 
-  .about-myself .about-container .get-myResume  {
-    transition: all .3s ease;
-    width: 180px;
-
-  }
-
-  .about-myself .about-container .get-myResume:hover  {
+  .about-myself .about-container .get-myResume:hover {
     transform: skewX(5deg);
   }
 
@@ -1591,7 +1586,7 @@
   }
 
   @keyframes grow {
-    100% { color: rgb(117, 115, 115); height: 50px;}
+    100% { height: 50px; }
   }
 
   footer .footer-container hr {
