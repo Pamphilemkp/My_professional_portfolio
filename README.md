@@ -12,7 +12,7 @@
 
 ## Live Demo 
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://pamphilemkp.github.io/My_professional_portfolio/)
 
 ## Getting Started
 
