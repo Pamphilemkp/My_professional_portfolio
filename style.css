@@ -59,7 +59,7 @@
     background-color: rgba(96, 112, 255, 0.8);
     -moz-backdrop-filter: blur(4px);
     -mebkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px); 
+    backdrop-filter: blur(4px);
     overflow-x: hidden;
     -webkit-animation: start 0.8s ease-in;
     animation: start 0.8s ease-in;
