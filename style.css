@@ -18,6 +18,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1;
   }
 
   .mobile-squeleton {
@@ -34,8 +35,110 @@
     height: 48px;
   }
 
-  .mobile-squeleton .header .header-menu {
+  .header-menu {
     display: none;
+  }
+
+   .show {
+    display: block;
+  } 
+
+  /*Mobile menu bar  */
+
+/* .hamburgeur-header {
+  height: 100vh;
+  width: 100vw;
+  background: #6070FF;
+  mix-blend-mode: multiply;
+} */
+
+  .hamburgeur {
+    display: block;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: -15px;
+    bottom: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: #6070FF;
+    mix-blend-mode: darken;
+    background-image: url('images/menu-barBg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    opacity: 1;
+    -webkit-animation: start 1.5s ease-in;
+    animation: start 1.5s ease-in; 
+  }
+
+@keyframes start {
+  /* from{opacity: 0;}
+  to{opacity: 1;} */
+  from{width: 0;opacity: 0;}
+  to{width: 100%;opacity: 1;}
+}
+
+  .hamburgeur li:nth-child(1) {
+    position: absolute;
+    top: 50px;
+    left: 28px;
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFFFFF;
+    height: 24px;
+  }
+  .hamburgeur li:nth-child(2) {
+    position: absolute;
+    top: 80px;
+    left: 28px;
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFFFFF;
+    height: 24px;
+  }
+  .hamburgeur li:nth-child(3) {
+    position: absolute;
+    top: 110px;
+    left: 28px;
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFFFFF;
+    height: 24px;
+  }
+  .hamburgeur li:nth-child(4) {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    height: 28px;
+    width: 28px;
+    /* border: 2px solid #67798E; */
+    background-color: #6070FF;
+    font-weight: 600;
+    font-size: 32px;
+    color: #FFFFFF;
+    height: 24px;
+  }
+
+ 
+  .hamburgeur li {
+    list-style: none;
+    font-size: 32px;
+  }
+
+  .hamburgeur li a {
+    color: #ffffff;
   }
 
   .header a {
@@ -1074,9 +1177,16 @@
     margin: 0;
   }
 
-  .header .header-menu li:hover {
+  .header .header-menu li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #344563;
+    ;
+  }
+
+  .header .header-menu li a:hover {
     color: #6070ff;
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .mobile-img {
