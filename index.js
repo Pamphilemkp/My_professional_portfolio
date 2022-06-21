@@ -12,9 +12,3 @@ removeMenuOption.addEventListener("click",removeMenubar)
 function menubar() {
     hamburgeurMenu.classList.toggle("hamburgeur")
 }
-
-// function removeMenubar() {
-//     hamburgeurMenu.classList.toggle("hamburgeur")
-// }
-
-// removeMenuOption

@@ -45,13 +45,6 @@
 
   /*Mobile menu bar  */
 
-/* .hamburgeur-header {
-  height: 100vh;
-  width: 100vw;
-  background: #6070FF;
-  mix-blend-mode: multiply;
-} */
-
   .hamburgeur {
     display: block;
     position: fixed;
@@ -68,15 +61,12 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    z-index: 10;
     opacity: 1;
-    -webkit-animation: start 1.5s ease-in;
-    animation: start 1.5s ease-in; 
+    -webkit-animation: start 1s ease-in;
+    animation: start 1s ease-in; 
   }
 
 @keyframes start {
-  /* from{opacity: 0;}
-  to{opacity: 1;} */
   from{width: 0;opacity: 0;}
   to{width: 100%;opacity: 1;}
 }
@@ -123,7 +113,6 @@
     right: 50px;
     height: 28px;
     width: 28px;
-    /* border: 2px solid #67798E; */
     background-color: #6070FF;
     font-weight: 600;
     font-size: 32px;
