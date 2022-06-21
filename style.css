@@ -50,10 +50,10 @@
     position: fixed;
     left: 0;
     right: 0;
-    top: 0;
+    top: -15px;
     bottom: 0;
-    height: 65%;
-    width: 375;
+    height: 100vh;
+    width: 100vw;
     background-color: #6070ff;
     mix-blend-mode: darken;
     background-image: url('images/menu-barBg.svg');
@@ -97,7 +97,7 @@
     font-family: 'Poppins', serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 32px;
     line-height: 44px;
     color: #fff;
     height: 24px;
@@ -105,7 +105,7 @@
 
   .hamburgeur li:nth-child(2) {
     position: absolute;
-    top: 96px;
+    top: 80px;
     left: 28px;
     font-family: 'Poppins', serif;
     font-style: normal;
@@ -118,7 +118,7 @@
 
   .hamburgeur li:nth-child(3) {
     position: absolute;
-    top: 140px;
+    top: 110px;
     left: 28px;
     font-family: 'Poppins', serif;
     font-style: normal;
