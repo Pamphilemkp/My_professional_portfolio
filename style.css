@@ -52,7 +52,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    height: 95%;
+    height: 65%;
     width: 375;
     background-color: #6070ff;
     mix-blend-mode: darken;
@@ -64,7 +64,6 @@
     opacity: 1;
     -webkit-animation: start 0.8s ease-in;
     animation: start 0.8s ease-in;
-    overflow-y: hidden;
   }
 
   @keyframes start {
@@ -98,7 +97,7 @@
     font-family: 'Poppins', serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 50px;
     line-height: 44px;
     color: #fff;
     height: 24px;
@@ -144,9 +143,6 @@
 
   .hamburgeur li a {
     color: #fff;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
   }
 
   .main {
@@ -725,9 +721,6 @@
 
   .hamburgeur li a {
     color: #fff;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
   }
 
   .mobile-squeleton .header .header-menu {
