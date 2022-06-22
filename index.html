@@ -17,13 +17,14 @@
       <header class="header">
           <h1><a href="#">My Logo</a></h1>
           <nav> 
-            <img src="images/Union.png" alt="hamburgeur menu" class="mobile-img">
-            <!-- <img src="images/desktop-header.svg" alt="hamburgeur menu" class="desktop-img"> -->
+            <a href="#"><img src="images/Union.png" alt="hamburgeur menu" class="mobile-img"></a>
+         
           </nav>
-          <ul class="header-menu">
-            <li>Portoflio</li>
-            <li>About</li>
-            <li>Contact</li>
+          <ul class="header-menu" id="header-menu">
+            <li><a href="#portfolio"  class="link">Portoflio</a></li>
+            <li><a href="#about" class="link">About</a></li>
+            <li><a href="#contact" class="link">Contact</a></li>
+            <li> <a href="#"><img src="images/removenav.svg" alt="Back hamburgeur menu " class="remove mobile-img"></a></li>
           </ul>
       </header>
 
@@ -80,7 +81,7 @@
 
    <!-- mobile section  CARD 1 -->
 
-<section class="section-nav card">
+<section class="section-nav card" id="portfolio">
 
    <h2 class="header-mobile">
         <img src="images/section_header1.svg" alt="logo card 1 mobile" class="mobile-img">
@@ -247,9 +248,9 @@
 </section>
 </section>
 
-<!-- About myself -->
+<!-- About myself resume -->
 
-<section class="about-myself">
+<section class="about-myself" id="about">
 <div class="about-container">
   <h2>
     About <br>
@@ -327,7 +328,7 @@
 </section>
 
 <footer>
-  <div class="footer-container">
+  <div class="footer-container" id="contact">
   <h3>Contact me</h3>
   <p>If you have an application you 
     are interested in developing, a
@@ -348,5 +349,6 @@
   
 </section>
 
+<script src="index.js"></script>
 </body>
 </html>
