@@ -1,0 +1,142 @@
+
+const container = document.querySelector(".conatiner-popup");
+const mainPopup = document.querySelector('#main-popup');
+const childPopup = document.querySelector('#child-popup');
+
+const cards = [
+    {
+        title: "Tonic",
+        image :"images/section_header1.svg",
+        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+        languages: ["html","css","javascript"],
+        seeLive: "See live",
+        seeSource:"See Source"
+    },
+    {
+        title: "Multi-Post Stories",
+        image :"images/sectio_header3.png",
+        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+        languages: ["html","css","javascript"],
+        seeLive: "See live",
+        seeSource:"See Source"
+    },
+       {
+        title: "Tonic",
+        image :"images/section_header.png",
+        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+        languages: ["html","css","javascript"],
+        seeLive: "See live",
+        seeSource:"See Source"
+    },
+    {
+        title: "Multi-Post Stories",
+        image :"images/section_header2.png",
+        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+        languages: ["html","css","javascript"],
+        seeLive: "See live",
+        seeSource:"See Source"
+    }
+
+]
+
+const card1 = document.querySelector("#card1")
+const card2 = document.querySelector("#card2")
+const card3 = document.querySelector("#card3")
+const card4 = document.querySelector("#card4")
+let IdButton = 0;
+
+
+card1.addEventListener('click', () => {
+    mainPopup.classList.add("popup");
+    childPopup.classList.add("conatiner-popup") 
+    cardDisplay ();
+    return IdButton;
+});
+
+card2.addEventListener('click', () => {
+    mainPopup.classList.add("popup");
+    childPopup.classList.add("conatiner-popup") 
+   IdButton++;
+   cardDisplay ();
+   return IdButton;
+
+});
+
+card3.addEventListener('click', () => {
+    mainPopup.classList.add("popup");
+    childPopup.classList.add("conatiner-popup") 
+    IdButton++;
+    cardDisplay ();
+    return IdButton;
+
+});
+
+card4.addEventListener('click', () => {
+    mainPopup.classList.add("popup");
+    childPopup.classList.add("conatiner-popup") 
+    IdButton++;
+    cardDisplay ();
+    return IdButton;
+
+});
+
+
+
+let cardId = cards[IdButton];
+
+const cancel = document.querySelector("#cancel")
+
+// remove the popup
+function cancelPopup() {
+  mainPopup.classList.remove("popup");
+  childPopup.classList.remove("conatiner-popup");
+  mainPopup.style.display="none";
+}
+
+console.log(cardId.title);
+console.log(cardId.image);
+console.log(IdButton);
+
+// fill out the card
+ function cardDisplay () {
+    childPopup .innerHTML = `
+       <nav>
+           <h3>${cardId.title}</h3>
+            <a href="#"><img src="images/cancelIcon.svg"" onclick="cancelPopup()" > </a>
+       </nav>
+
+        <ul>
+            <li>CANOPY</li>
+            <li><img src="images/Counter.png" alt="dot-counter 7"></li>
+            <li>Back End Dev</li>
+            <li><img src="images/Counter.png" alt="dot-counter 8"></li>
+        </ul>
+        <img  classe="image" width="100%" height="586px"; src="${cardId.image}">
+      <section class="layout">
+        <p>${cardId.description}"</p>
+        <ul class="language-list">
+        <li>${cardId.languages[0]}</li>
+        <li>${cardId.languages[1]}</li>
+        <li>${cardId.languages[2]}</li>
+            </ul>
+            <ul class="language-list desktop-img">
+            <li>github</li>
+            <li>ruby</li>
+            <li>Bootstraps</li>
+           </ul>
+    
+    <div class="live-btn" >
+      <button type="button" class="button"> 
+        ${cardId.seeLive}
+        <img src="images/seelive.svg" alt="">
+      </button>
+      <button type="button" class="button"> 
+        ${cardId.seeSource}
+        <img src="images/Vector(2).png" alt="">
+      </button>
+    </div>
+  </section>`}
+
+
+
+
