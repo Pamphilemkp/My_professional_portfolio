@@ -52,11 +52,11 @@
     position: fixed;
     left: 0;
     right: 0;
-    top: 0;
+    top: -15px;
     bottom: 0;
-    height: 95vh;
+    height: 100%;
     width: 100vw;
-    background-color: rgba(96, 112, 255, 0.8);
+    background-color: rgba(96, 112, 255, 0.9);
     -moz-backdrop-filter: blur(4px);
     -mebkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
@@ -91,7 +91,7 @@
 
   .hamburgeur li:nth-child(1) {
     position: absolute;
-    top: 50px;
+    top: 145px;
     left: 28px;
     font-family: 'Poppins', serif;
     font-style: normal;
@@ -104,7 +104,7 @@
 
   .hamburgeur li:nth-child(2) {
     position: absolute;
-    top: 95px;
+    top: 220px;
     left: 28px;
     font-family: 'Poppins', serif;
     font-style: normal;
@@ -117,7 +117,7 @@
 
   .hamburgeur li:nth-child(3) {
     position: absolute;
-    top: 140px;
+    top: 295px;
     left: 28px;
     font-family: 'Poppins', serif;
     font-style: normal;
