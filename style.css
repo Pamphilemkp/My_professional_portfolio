@@ -624,7 +624,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 300px; 
+  width: 100%; 
 
 }
 
@@ -646,7 +646,7 @@ width: 24px;
 
 .conatiner-popup ul {
   padding: 0;
-  width: 300px; 
+  width: 100%; 
   display: flex;
   align-items: center;
   height: 32px;
@@ -665,13 +665,13 @@ color: #344563;
 }
 
 .conatiner-popup .image{
-  width: 300px;
+  width: 100%;
   height: 220px;
   border-radius: 8px;
 }
 
 .conatiner-popup p{
-  width: 300px;
+  width: 100%;
   height: 220px;
   font-family: 'Poppins', serif;
   font-style: normal;
@@ -694,7 +694,7 @@ color: #344563;
 }
 
 .live-btn {
-  width: 300px;
+  width: 100%;
   display: flex;
   gap: 10px;
   align-items: center;
