@@ -50,6 +50,25 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@pamphileMusonda](https://twitter.com/PamphileMusonda)
 - LinkedIn: [@PamphileMusonda](https://linkedin.com/in/PamphileMusonda)
 
+## 🤝 Colaborators
+👤 **Azizbek Ruzmatov**
+
+- GitHub: [@pamphilemkp](https://github.com/AzizRAA)
+- Twitter: [@pamphileMusonda](https://twitter.com/)
+- LinkedIn: [@PamphileMusonda](https://linkedin.com/in/)
+
+👤 **Samuel perez**
+
+- GitHub: [@pamphilemkp](https://github.com/SamuelTTW)
+- Twitter: [@pamphileMusonda](https://twitter.com/)
+- LinkedIn: [@PamphileMusonda](https://linkedin.com/in/)
+
+👤 **Mark Ngwala**
+
+- GitHub: [@pamphilemkp](https://github.com/Markotweyo)
+- Twitter: [@pamphileMusonda](https://twitter.com/)
+- LinkedIn: [@PamphileMusonda](https://linkedin.com/in/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
