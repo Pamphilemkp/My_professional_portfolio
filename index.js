@@ -24,12 +24,14 @@ const messageType = document.querySelector('.errorMessage');// get the message
 const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 const comment = document.getElementById("comment");
 let counter = 0;
+const ParagraphError = document.querySelector('.Paragraph-errors');
 
 // for setting errors for name
 const setError = (element, message) => {
   messageType.textContent = message;
   clientName.classList.add('error');
   clientName.classList.remove('success');
+  ParagraphError.style.display = 'block';
 };
 
 // for setting errors for email
@@ -37,12 +39,14 @@ const setErrorEmail = (element, message) => {
   messageType.textContent = message;
   email.classList.add('error');
   email.classList.remove('success');
+  ParagraphError.style.display = 'block';
 };
 // for setting errors for comment
 const setErrorComment = (element, message) => {
   messageType.textContent = message;
   comment.classList.add('error');
   comment.classList.remove('success');
+  ParagraphError.style.display = 'block';
 };
 
 //HERE I STARTED
@@ -57,6 +61,7 @@ const setSuccess = (element) => {
   clientName.classList.remove('error');
   email.classList.add('success');
   email.classList.remove('error');
+  ParagraphError.style.display = 'block';
 };
 
 const validateInputs = () => {
@@ -118,6 +123,7 @@ form.addEventListener('submit', (e) => {
   if (counter === 3) {
     messageType.classList.replace("errorMessage","submitted")
      messageType.textContent = "Submitted";
+     ParagraphError.style.display = 'block';
   } 
   else {
     counter = 0;

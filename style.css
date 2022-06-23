@@ -749,6 +749,9 @@
       margin-left: 0;
       margin-bottom: 0;
     }
+    .ParagraphError {
+      display: none;
+    }
 
 }
 
@@ -1506,6 +1509,9 @@
       text-align: center;
       margin-left: 0;
       margin-bottom: 0;
+    }
+    .ParagraphError {
+      display: none;
     }
 
 }
@@ -2312,6 +2318,9 @@
       text-align: center;
       margin-left: 0;
       margin-bottom: 0;
+    }
+    .ParagraphError {
+      display: none;
     }
 
 }
