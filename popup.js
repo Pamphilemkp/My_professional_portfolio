@@ -1,4 +1,4 @@
-
+const RemoveContainer = document.querySelector('.popup');
 const container = document.querySelector(".conatiner-popup");
 const mainPopup = document.querySelector('#main-popup');
 const childPopup = document.querySelector('#child-popup');
@@ -6,7 +6,7 @@ const childPopup = document.querySelector('#child-popup');
 const cards = [
     {
         title: "Tonic",
-        image :"images/section_header1.svg",
+        image :"images/section_header1.png",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
         languages: ["html","css","javascript"],
         seeLive: "See live",
@@ -46,43 +46,43 @@ const card4 = document.querySelector("#card4")
 let IdButton = 0;
 
 
-card1.addEventListener('click', () => {
-    mainPopup.classList.add("popup");
-    childPopup.classList.add("conatiner-popup") 
-    cardDisplay ();
-    return IdButton;
-});
+// card1.addEventListener('click', () => {
+//     mainPopup.classList.add("popup");
+//     childPopup.classList.add("conatiner-popup") 
+//     cardDisplay ();
+//     return IdButton;
+// });
 
-card2.addEventListener('click', () => {
-    mainPopup.classList.add("popup");
-    childPopup.classList.add("conatiner-popup") 
-   IdButton++;
-   cardDisplay ();
-   return IdButton;
+// card2.addEventListener('click', () => {
+//     mainPopup.classList.add("popup");
+//     childPopup.classList.add("conatiner-popup") 
+//    IdButton++;
+//    cardDisplay ();
+//    return IdButton;
 
-});
+// });
 
-card3.addEventListener('click', () => {
-    mainPopup.classList.add("popup");
-    childPopup.classList.add("conatiner-popup") 
-    IdButton++;
-    cardDisplay ();
-    return IdButton;
+// card3.addEventListener('click', () => {
+//     mainPopup.classList.add("popup");
+//     childPopup.classList.add("conatiner-popup") 
+//     IdButton++;
+//     cardDisplay ();
+//     return IdButton;
 
-});
+// });
 
-card4.addEventListener('click', () => {
-    mainPopup.classList.add("popup");
-    childPopup.classList.add("conatiner-popup") 
-    IdButton++;
-    cardDisplay ();
-    return IdButton;
+// card4.addEventListener('click', () => {
+//     mainPopup.classList.add("popup");
+//     childPopup.classList.add("conatiner-popup") 
+//     IdButton++;
+//     cardDisplay ();
+//     return IdButton;
 
-});
+// });
 
 
 
-let cardId = cards[IdButton];
+// let cardId = cards[IdButton];
 
 const cancel = document.querySelector("#cancel")
 
@@ -93,50 +93,121 @@ function cancelPopup() {
   mainPopup.style.display="none";
 }
 
-console.log(cardId.title);
-console.log(cardId.image);
-console.log(IdButton);
+// console.log(cardId.title);
+// console.log(cardId.image);
+// console.log(IdButton);
 
-// fill out the card
- function cardDisplay () {
-    childPopup .innerHTML = `
-       <nav>
-           <h3>${cardId.title}</h3>
-            <a href="#"><img src="images/cancelIcon.svg"" onclick="cancelPopup()" > </a>
-       </nav>
+// // fill out the card
+//  function cardDisplay () {
+//     childPopup .innerHTML = `
+//        <nav>
+//            <h3>${cardId.title}</h3>
+//             <a href="#"><img src="images/cancelIcon.svg"" onclick="cancelPopup()" > </a>
+//        </nav>
 
-        <ul>
-            <li>CANOPY</li>
-            <li><img src="images/Counter.png" alt="dot-counter 7"></li>
-            <li>Back End Dev</li>
-            <li><img src="images/Counter.png" alt="dot-counter 8"></li>
-        </ul>
-        <img  classe="image" width="100%" height="586px"; src="${cardId.image}">
-      <section class="layout">
-        <p>${cardId.description}"</p>
-        <ul class="language-list">
-        <li>${cardId.languages[0]}</li>
-        <li>${cardId.languages[1]}</li>
-        <li>${cardId.languages[2]}</li>
-            </ul>
-            <ul class="language-list desktop-img">
-            <li>github</li>
-            <li>ruby</li>
-            <li>Bootstraps</li>
-           </ul>
+//         <ul>
+//             <li>CANOPY</li>
+//             <li><img src="images/Counter.png" alt="dot-counter 7"></li>
+//             <li>Back End Dev</li>
+//             <li><img src="images/Counter.png" alt="dot-counter 8"></li>
+//         </ul>
+//         <img  classe="image" width="100%" height="586px"; src="${cardId.image}">
+//       <section class="layout">
+//         <p>${cardId.description}"</p>
+//         <ul class="language-list">
+//         <li>${cardId.languages[0]}</li>
+//         <li>${cardId.languages[1]}</li>
+//         <li>${cardId.languages[2]}</li>
+//             </ul>
+//             <ul class="language-list desktop-img">
+//             <li>github</li>
+//             <li>ruby</li>
+//             <li>Bootstraps</li>
+//            </ul>
     
-    <div class="live-btn" >
-      <button type="button" class="button"> 
-        ${cardId.seeLive}
-        <img src="images/seelive.svg" alt="">
-      </button>
-      <button type="button" class="button"> 
-        ${cardId.seeSource}
-        <img src="images/Vector(2).png" alt="">
-      </button>
-    </div>
-  </section>`}
+//     <div class="live-btn" >
+//       <button type="button" class="button"> 
+//         ${cardId.seeLive}
+//         <img src="images/seelive.svg" alt="">
+//       </button>
+//       <button type="button" class="button"> 
+//         ${cardId.seeSource}
+//         <img src="images/Vector(2).png" alt="">
+//       </button>
+//     </div>
+//   </section>`}
 
 
+function cardDisplay(index) {
+    const {
+        title,
+        image,
+        description,
+        languages,
+        seeLive,
+        seeSource
+    } = cards[index];
+
+    childPopup .innerHTML = `
+          <nav>
+           <h3>${title}</h3>
+               <a href="#"><img src="images/cancelIcon.svg"" onclick="cancelPopup()" > </a>
+          </nav>
+    
+           <ul>
+                <li>CANOPY</li>
+              <li><img src="images/Counter.png" alt="dot-counter 7"></li>
+               <li>Back End Dev</li>
+                <li><img src="images/Counter.png" alt="dot-counter 8"></li>
+            </ul>
+            <img  classe="image" width="100%" height="586px"; src="${image}">
+           <section class="layout">
+           <p>${description}"</p>
+             <ul class="language-list">
+            <li>${languages[0]}</li>
+             <li>${languages[1]}</li>
+            <li>${languages[2]}</li>
+                 </ul>
+               <ul class="language-list desktop-img">
+               <li>github</li>
+                <li>ruby</li>
+                 <li>Bootstraps</li>
+              </ul>
+        
+       <div class="live-btn" >
+          <button type="button" class="button"> 
+            ${seeLive}
+            <img src="images/seelive.svg" alt="">
+          </button>
+          <button type="button" class="button"> 
+             ${seeSource}
+            <img src="images/Vector(2).png" alt="">
+           </button>
+         </div>
+     </section>`;
+
+     //add button active
+     mainPopup.classList.add("popup");
+     childPopup.classList.add("conatiner-popup")
+     mainPopup.style.display="block"; 
+
+}
+
+ //call the designed class after the user click on it
+
+card1.addEventListener('click', () => {
+    cardDisplay (0)
+});
+card2.addEventListener('click', () => {
+    cardDisplay (1)
+});
+card3.addEventListener('click', () => {
+    cardDisplay (2)
+});
+card4.addEventListener('click', () => {
+    cardDisplay (3)
+});
+
+mainPopup.addEventListener('click',cancelPopup);
 
 
