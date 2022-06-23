@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-
 @media only screen and (max-width: 768px) {
   body {
     margin: 0;
@@ -717,7 +716,7 @@
     border-radius: 8px;
   }
 
-  #form .errorMessage{
+  #form .errorMessage {
     font-family: 'Poppins', serif;
     font-style: normal;
     color: red;
@@ -733,26 +732,27 @@
   #form .success {
     border: 1px solid #09c372;
   }
-  #form .error{
+
+  #form .error {
     border: 1px solid red;
-     }
+  }
 
-     #form .submitted{
-      font-family: 'Poppins', serif;
-      font-style: normal;
-      color: #09c372;
-      font-size: 14px;
-      width: 100%;
-      height: 20px;
-      line-height: 0px;
-      text-align: center;
-      margin-left: 0;
-      margin-bottom: 0;
-    }
-    .ParagraphError {
-      display: none;
-    }
+  #form .submitted {
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    color: #09c372;
+    font-size: 14px;
+    width: 100%;
+    height: 20px;
+    line-height: 0px;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
 
+  .ParagraphError {
+    display: none;
+  }
 }
 
 /* responsiveness RWD for tablets */
@@ -1479,7 +1479,7 @@
     border-radius: 8px;
   }
 
-  #form .errorMessage{
+  #form .errorMessage {
     font-family: 'Poppins', serif;
     font-style: normal;
     color: red;
@@ -1495,25 +1495,27 @@
   #form .success {
     border: 1px solid #09c372;
   }
-  #form .error{
-    border: 1px solid red;
-     }
-     #form .submitted{
-      font-family: 'Poppins', serif;
-      font-style: normal;
-      color: #09c372;
-      font-size: 14px;
-      width: 100%;
-      height: 20px;
-      line-height: 0px;
-      text-align: center;
-      margin-left: 0;
-      margin-bottom: 0;
-    }
-    .ParagraphError {
-      display: none;
-    }
 
+  #form .error {
+    border: 1px solid red;
+  }
+
+  #form .submitted {
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    color: #09c372;
+    font-size: 14px;
+    width: 100%;
+    height: 20px;
+    line-height: 0px;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .ParagraphError {
+    display: none;
+  }
 }
 
 /* responsiveness RWD for desktop large screens */
@@ -2288,7 +2290,8 @@
     border: 1px solid #6070ff;
     border-radius: 8px;
   }
-  #form .errorMessage{
+
+  #form .errorMessage {
     font-family: 'Poppins', serif;
     font-style: normal;
     color: red;
@@ -2304,23 +2307,25 @@
   #form .success {
     border: 1px solid #09c372;
   }
-  #form .error{
-    border: 1px solid red;
-     }
-     #form .submitted{
-      font-family: 'Poppins', serif;
-      font-style: normal;
-      color: #09c372;
-      font-size: 14px;
-      width: 100%;
-      height: 20px;
-      line-height: 0px;
-      text-align: center;
-      margin-left: 0;
-      margin-bottom: 0;
-    }
-    .ParagraphError {
-      display: none;
-    }
 
+  #form .error {
+    border: 1px solid red;
+  }
+
+  #form .submitted {
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    color: #09c372;
+    font-size: 14px;
+    width: 100%;
+    height: 20px;
+    line-height: 0px;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .ParagraphError {
+    display: none;
+  }
 }

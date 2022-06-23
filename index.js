@@ -13,16 +13,14 @@ function menubar() {
 NavigationMenu.addEventListener('click', menubar);
 headerMenu.addEventListener('click', menubar);
 
-
-
 // form validation
 
 const form = document.querySelector('form');
 const clientName = document.getElementById('name');// get the name
 const email = document.getElementById('email');// get the email
 const messageType = document.querySelector('.errorMessage');// get the message
-const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-const comment = document.getElementById("comment");
+const emailRegex = /^(([^<>()\\[\]\\.,;:\s@"]+(\.[^<>()\\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+const comment = document.getElementById('comment');
 let counter = 0;
 const ParagraphError = document.querySelector('.Paragraph-errors');
 
@@ -49,13 +47,12 @@ const setErrorComment = (element, message) => {
   ParagraphError.style.display = 'block';
 };
 
-//HERE I STARTED
-//HERE I STARTED
-//HERE I STARTED
-
+// HERE I STARTED
+// HERE I STARTED
+// HERE I STARTED
 
 // for setting the the success message
-const setSuccess = (element) => {
+const setSuccess = () => {
   messageType.textContent = '';
   clientName.classList.add('success');
   clientName.classList.remove('error');
@@ -104,9 +101,9 @@ const validateInputs = () => {
 
   // comment validation
   if (messageValue === '') {
-    setErrorComment (Comment, 'Please add a message');
+    setErrorComment(Comment, 'Please add a message');
   } else if (messageValue.split('').length > 500) {
-    setErrorComment (Comment, 'Message should be short and do not exceed 500 characters');
+    setErrorComment(Comment, 'Message should be short and do not exceed 500 characters');
   } else {
     setSuccess(Comment);
     counter += 1;
@@ -121,11 +118,10 @@ form.addEventListener('submit', (e) => {
 
   // making decisions
   if (counter === 3) {
-    messageType.classList.replace("errorMessage","submitted")
-     messageType.textContent = "Submitted";
-     ParagraphError.style.display = 'block';
-  } 
-  else {
+    messageType.classList.replace('errorMessage', 'submitted');
+    messageType.textContent = 'Submitted';
+    ParagraphError.style.display = 'block';
+  } else {
     counter = 0;
     e.preventDefault();
   }
