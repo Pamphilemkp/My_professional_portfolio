@@ -1,4 +1,3 @@
-
 const NavigationMenu = document.querySelector('.mobile-img');
 const hamburgeurMenu = document.querySelector('#header-menu');
 const headerMenu = document.querySelector('.remove');
