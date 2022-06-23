@@ -49,50 +49,6 @@ function cancelPopup() {
   mainPopup.style.display = 'none';
 }
 
-// console.log(cardId.title);
-// console.log(cardId.image);
-// console.log(IdButton);
-
-// // fill out the card
-//  function cardDisplay () {
-//     childPopup .innerHTML = `
-//        <nav>
-//            <h3>${cardId.title}</h3>
-//             <a href="#"><img src="images/cancelIcon.svg"" onclick="cancelPopup()" > </a>
-//        </nav>
-
-//         <ul>
-//             <li>CANOPY</li>
-//             <li><img src="images/Counter.png" alt="dot-counter 7"></li>
-//             <li>Back End Dev</li>
-//             <li><img src="images/Counter.png" alt="dot-counter 8"></li>
-//         </ul>
-//         <img  classe="image" width="100%" height="586px"; src="${cardId.image}">
-//       <section class="layout">
-//         <p>${cardId.description}"</p>
-//         <ul class="language-list">
-//         <li>${cardId.languages[0]}</li>
-//         <li>${cardId.languages[1]}</li>
-//         <li>${cardId.languages[2]}</li>
-//             </ul>
-//             <ul class="language-list desktop-img">
-//             <li>github</li>
-//             <li>ruby</li>
-//             <li>Bootstraps</li>
-//            </ul>
-
-//     <div class="live-btn" >
-//       <button type="button" class="button">
-//         ${cardId.seeLive}
-//         <img src="images/seelive.svg" alt="">
-//       </button>
-//       <button type="button" class="button">
-//         ${cardId.seeSource}
-//         <img src="images/Vector(2).png" alt="">
-//       </button>
-//     </div>
-//   </section>`}
-
 function cardDisplay(index) {
   const {
     title,
