@@ -339,11 +339,15 @@
       project that needs coding. I’d
        love to help with it
   </p>
-  <form action="https://formspree.io/f/xyyovzvy" method="post">
-    <input type="text" name="name" placeholder="ex: pamphile" maxlength="30" required> <br>
-    <input type="email" name="email" placeholder="ex: pamphilemkp@gmail.com" maxlength="30" required> <br>
-    <textarea placeholder=" Write your message here" name="comment" id="comment" cols="30" rows="10" required maxlength="500"></textarea><br>
+  <form id="form" action="https://formspree.io/f/xyyovzvy" method="post">
+    <p class="errorMessage"></p>
+    <input type="text" name="name" id="name" placeholder="ex: pamphile" maxlength="30" > <br>
+    <input type="email" name="email" id="email" placeholder="ex: pamphilemkp@gmail.com" maxlength="30" >
+    <br>
+    <textarea placeholder=" Write your message here" id="comment" name="comment" id="comment" cols="30" rows="10"  maxlength="500"></textarea><br>
+    
     <input type="submit" value="Get It Touch" name="submit" id="submit" class="button">
+    
   </form>
   <hr>
  </div>

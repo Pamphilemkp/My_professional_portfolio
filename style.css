@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
+
 @media only screen and (max-width: 768px) {
   body {
     margin: 0;
@@ -715,6 +716,40 @@
     border: 1px solid #6070ff;
     border-radius: 8px;
   }
+
+  #form .errorMessage{
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    color: red;
+    font-size: 14px;
+    width: 100%;
+    height: 20px;
+    line-height: 0px;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  #form .success {
+    border: 1px solid #09c372;
+  }
+  #form .error{
+    border: 1px solid red;
+     }
+
+     #form .submitted{
+      font-family: 'Poppins', serif;
+      font-style: normal;
+      color: #09c372;
+      font-size: 14px;
+      width: 100%;
+      height: 20px;
+      line-height: 0px;
+      text-align: center;
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+
 }
 
 /* responsiveness RWD for tablets */
@@ -1381,8 +1416,10 @@
     position: fixed;
     width: 80vw;
     height: 80vh;
-    left: calc(50% - 343px / 2);
-    top: 60px;
+    top: 3.5%;
+    left: 7%;
+    bottom: 3.5%;
+    right: 7%;
     overflow: auto;
     background: #fff;
     z-index: 10;
@@ -1438,6 +1475,39 @@
     border: 1px solid #6070ff;
     border-radius: 8px;
   }
+
+  #form .errorMessage{
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    color: red;
+    font-size: 14px;
+    width: 100%;
+    height: 20px;
+    line-height: 0px;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  #form .success {
+    border: 1px solid #09c372;
+  }
+  #form .error{
+    border: 1px solid red;
+     }
+     #form .submitted{
+      font-family: 'Poppins', serif;
+      font-style: normal;
+      color: #09c372;
+      font-size: 14px;
+      width: 100%;
+      height: 20px;
+      line-height: 0px;
+      text-align: center;
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+
 }
 
 /* responsiveness RWD for desktop large screens */
@@ -2212,4 +2282,36 @@
     border: 1px solid #6070ff;
     border-radius: 8px;
   }
+  #form .errorMessage{
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    color: red;
+    font-size: 14px;
+    width: 100%;
+    height: 20px;
+    line-height: 0px;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  #form .success {
+    border: 1px solid #09c372;
+  }
+  #form .error{
+    border: 1px solid red;
+     }
+     #form .submitted{
+      font-family: 'Poppins', serif;
+      font-style: normal;
+      color: #09c372;
+      font-size: 14px;
+      width: 100%;
+      height: 20px;
+      line-height: 0px;
+      text-align: center;
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+
 }
