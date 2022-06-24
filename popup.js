@@ -71,7 +71,7 @@ function cardDisplay(index) {
                <li>Back End Dev</li>
                 <li><img src="images/Counter.png" alt="dot-counter 8"></li>
             </ul>
-            <img  classe="image" width="100%" height="286px"; src="${image}">
+            <img  classe="image" width="100%" height="360px"; src="${image}">
            <section class="layout">
            <p>${description}"</p>
              <ul class="language-list">
