@@ -110,7 +110,6 @@ const validateInputs = () => {
   }
 };
 
-
 // Storing data Client side local storage
 
 let username = clientName.value;
