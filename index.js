@@ -111,6 +111,30 @@ const validateInputs = () => {
 };
 
 // the validation when the form is submitted
+
+// form.addEventListener('submit', (e) => {
+//   // prevent sumitting
+
+//   validateInputs();// tocheck the form for validation
+
+//   // making decisions
+//   if (counter === 3) {
+//     messageType.classList.replace('errorMessage', 'submitted');
+//     messageType.textContent = 'Submitted';
+//     ParagraphError.style.display = 'block';
+//   } else {
+//     counter = 0;
+//     e.preventDefault();
+//   }
+// });
+
+// Storing data Client side local storage
+
+let username = clientName.value;
+let userEmail = email.value;
+// eslint-disable-next-line no-unused-vars
+let userMessage = messageType.value;
+
 form.addEventListener('submit', (e) => {
   // prevent sumitting
 
@@ -121,6 +145,20 @@ form.addEventListener('submit', (e) => {
     messageType.classList.replace('errorMessage', 'submitted');
     messageType.textContent = 'Submitted';
     ParagraphError.style.display = 'block';
+
+    // prehold inputs with user values
+
+    localStorage.setItem('name', username);
+    localStorage.setItem('userEmail', userEmail);
+    localStorage.setItem('userMessage', username);
+
+    const keyname = localStorage.getItem('name');
+    const keyMail = localStorage.getItem('userEmail');
+    const keyMessage = localStorage.getItem('userMessage');
+
+    username = keyname;
+    userEmail = keyMail;
+    userMessage = keyMessage;
   } else {
     counter = 0;
     e.preventDefault();
