@@ -129,13 +129,13 @@ form.addEventListener('submit', (e) => {
 // Storing data Client side local storage
 
 function createStorage() {
-  const myFormData = {
+  const FormData = {
     username: clientName.value,
     userEmail: email.value,
     userMessage: messageType.value,
   };
 
-  localStorage.setItem('data', JSON.stringify(myFormData));
+  localStorage.setItem('data', JSON.stringify(FormData));
 }
 document.addEventListener('DOMContentLoaded', () => {
   const getStoragevalue = localStorage.getItem('data');
