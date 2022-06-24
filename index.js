@@ -110,23 +110,6 @@ const validateInputs = () => {
   }
 };
 
-// the validation when the form is submitted
-
-// form.addEventListener('submit', (e) => {
-//   // prevent sumitting
-
-//   validateInputs();// tocheck the form for validation
-
-//   // making decisions
-//   if (counter === 3) {
-//     messageType.classList.replace('errorMessage', 'submitted');
-//     messageType.textContent = 'Submitted';
-//     ParagraphError.style.display = 'block';
-//   } else {
-//     counter = 0;
-//     e.preventDefault();
-//   }
-// });
 
 // Storing data Client side local storage
 
