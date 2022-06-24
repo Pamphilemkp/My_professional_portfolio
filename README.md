@@ -63,12 +63,6 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@pamphileMusonda](https://twitter.com/)
 - LinkedIn: [@PamphileMusonda](https://linkedin.com/in/)
 
-👤 **Mark Ngwala**
-
-- GitHub: [@pamphilemkp](https://github.com/Markotweyo)
-- Twitter: [@pamphileMusonda](https://twitter.com/)
-- LinkedIn: [@PamphileMusonda](https://linkedin.com/in/)
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!

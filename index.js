@@ -110,7 +110,6 @@ const validateInputs = () => {
   }
 };
 
-// the validation when the form is submitted
 form.addEventListener('submit', (e) => {
   // prevent sumitting
 
@@ -126,3 +125,27 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
   }
 });
+
+// Storing data Client side local storage
+
+function createStorage() {
+  const FormData = {
+    username: clientName.value,
+    userEmail: email.value,
+    userMessage: messageType.value,
+  };
+
+  localStorage.setItem('data', JSON.stringify(FormData));
+}
+document.addEventListener('DOMContentLoaded', () => {
+  const getStoragevalue = localStorage.getItem('data');
+  if (getStoragevalue) {
+    const formObject = JSON.parse(getStoragevalue);
+    clientName.value = formObject.username;
+    email.value = formObject.userEmail;
+    messageType.value = formObject.messageType;
+  }
+});
+clientName.onchange = createStorage;
+email.onchange = createStorage;
+messageType.onchange = createStorage;
